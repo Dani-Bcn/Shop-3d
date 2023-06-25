@@ -1,8 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import React from "react";
-import { Title } from "../components_3d/Title";
 import { Environment, PerspectiveCamera, Scroll, ScrollControls } from "@react-three/drei";
-import { Mesh } from "three";
+import Title from "../components_3d/Title";
 
 export default function Scene_home() {
   return (
@@ -10,8 +9,8 @@ export default function Scene_home() {
       <Canvas>
         <Environment preset="city" />
         <ScrollControls
-          pages={0}
-          damping={0.5}
+          pages={5}
+          damping={0.3}
         >
           <spotLight
           position={[0,5,5]}
